@@ -1,0 +1,9 @@
+$fuente-tipica: sans-serif, Helvetica, arial;
+$color-fondo: #ccc;
+
+body{
+    background-color: $color-fondo;
+}
+h1{
+    font-family: $fuente-tipica;
+}
