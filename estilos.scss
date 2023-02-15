@@ -41,3 +41,15 @@ p{
 .caja{
     @include createBorder(red, 100px, white)
 }
+//CONDICIONALES
+//IF
+$color-fondo: black;
+h1{
+    @if $color-fondo == #ccc{
+        color:black;
+    }@else if $color-fondo == black{
+        color:lightsalmon;
+    }@else {
+        color: red;
+    }
+}
