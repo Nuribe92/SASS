@@ -12,3 +12,32 @@ h1{
 p{
     color: $color-letra;
 }
+
+//MIXIN
+
+//los Mixin son funciones en css por ejemplo
+
+@mixin crearBordes(){
+    border: 10px solid black;
+    border-radius: 50px;
+    box-shadow:  0px 0px 10px black;
+}
+//entonces podemos llamarlo como se llamaria una funcion en JS
+
+.caja{
+    @include crearBordes();
+}
+//aqui llamamos a la funcion para re utilizar un fragmento del codigo
+//tambien se puede hacer de otra forma
+//en vez de definir todos los parametros de primero, vamos a dejar la opcion para 
+//definirlo mas adelante. por ejemplo:
+@mixin createBorder($color, $size, $shadowcolor){
+    border: 10px solid $color;
+    border-radius: $size;
+    box-shadow:  0px 0px 10px $shadowcolor;
+}
+//entonces cuando llamemos a la funcion tenemos que especificar esos parametros
+
+.caja{
+    @include createBorder(red, 100px, white)
+}
