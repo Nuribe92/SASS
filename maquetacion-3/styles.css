@@ -32,6 +32,10 @@
     color: black;
     text-shadow: 1px 1px 0px #ccc;
     text-transform: uppercase;
+    font-family: helvetica;
+    font-style: italic;
+    font-weight: 900px;
+    font-size: 35px;
     
 }
 
@@ -39,8 +43,8 @@
 .logo h1{
     font-family: helvetica;
     font-style: italic;
-    font-weight: 600px;
-    font-size: 25px;
+    font-weight: 900px;
+    font-size: 35px;
 }
 
 
@@ -162,4 +166,92 @@ aside a{
 aside a:hover{
     background-color: #444;
     color: #eee;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-end;
+    height: 120px;
+    align-items: center;
+    border-top: 1px solid rgba(225,225,226, 0.8);
+
+}
+
+#footer .logo{
+    opacity: 0.5;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+    text-align: right;
+    margin-right: 20px;
+}
+#footer .info{
+    flex-grow: 1;
+    order: 1;
+    margin-left: 20px;
+    color: #444;
+}
+@media (max-width: 1680px){
+   #menu a{
+    padding: 0px;
+   } 
+}
+
+@media (max-width: 1516px){
+    #header{
+        text-align: center;
+    }
+    #menu > ul{
+        margin-top: 20px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 670px){
+     #menu ul{
+        margin-left: 20px;
+        justify-content: space-evenly;
+     }
+    #content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top:20px ;
+        padding-bottom: 20px;
+    }
+    aside{
+        padding-left: 15px;
+        margin: 0px;
+    }
+    .proyect{
+        margin-right: 0px;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer .info{
+        width: 100%;
+        flex-grow: 1;
+        order: 2;
+        margin-left: 20px;
+        color: #444;
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0px;
+        align-items: center;
+    }
+    #footer .logo{
+        width: 100%;
+        order: 1;
+        margin-left: 20px;
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0px;
+        align-items: center;
+    }
+   
 }
