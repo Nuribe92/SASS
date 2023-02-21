@@ -31,6 +31,7 @@ body {
 }
 .layout .green {
   background: green;
+  grid-row: 2/4;
   
 }
 .layout .blue {
@@ -44,4 +45,5 @@ body {
   background: lightblue;
   grid-column-start: 1;
   grid-column-end: 3;
+  
 }
