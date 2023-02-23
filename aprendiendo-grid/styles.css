@@ -3,6 +3,10 @@ body {
   text-align: center;
 }
 /*Ejercicio completo*/
+#website *{
+  margin: 0;
+  padding: 0;
+}
 #website{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -23,8 +27,18 @@ body {
   background: lightblue;
   color: black;
 }
+#menu ul{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+}
+
 #contenido{
   grid-column: 1 /5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 20px;
   background: #eee;
 }
 #contenido article{
