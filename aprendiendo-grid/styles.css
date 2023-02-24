@@ -19,6 +19,7 @@ body {
 }
 #cabecera{
   display: flex;
+  grid-gap: 10px;
   justify-content: center;
   align-items: center;
   grid-column: 1 /6;
