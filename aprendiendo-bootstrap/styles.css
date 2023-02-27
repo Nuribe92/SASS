@@ -15,3 +15,11 @@ footer{
     height: 50px;
     line-height: 50px;
 }
+
+.lateral{
+    height: 550px;
+}
+
+.lateral > div{
+    height: 50px;
+}
