@@ -9,7 +9,7 @@ en el body de la pagina, en una alerta y por la consola el resultado de sumar, r
 let num1 = parseInt(prompt("Introduce el primer numero", 0));
 let num2 = parseInt(prompt("Introduce el segundo numero", 0));
 
-while(num1 < 0) || (num2 < 0) || isNAN(num1) || isNAN(num2){
+while(num1 < 0 || num2 < 0 || isNAN(num1) || isNAN(num2)){
     num1 = parseInt(prompt("Introduce el primer numero", 0));
     num2 = parseInt(prompt("Introduce el segundo numero", 0));
 }   
