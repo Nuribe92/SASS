@@ -21,4 +21,10 @@ let result = "la Suma es: " +(num1 + num2)+"<br>" +
 
 document.write(result);
 
+function calculadora(num1, num2){
+    let suma = num1 + num2;
+    return suma
+}
+console.log(calculadora(8, 9));
+
 
