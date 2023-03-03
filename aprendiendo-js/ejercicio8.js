@@ -27,4 +27,8 @@ function calculadora(num1, num2){
 }
 console.log(calculadora(8, 9));
 
+// .length metodo para medir la logitud de un strign
+//facil para comprobar si el usuario a puesto alguna informacion o no
+
+
 
